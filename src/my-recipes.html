@@ -3,9 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        h1, h2 {
+            font-family: 'Londrina Solid', cursive;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            line-height: 65px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: #12345d;
+        }
+
+        .flex-container > div {
+            background-color: #69a7f134;
+            margin: 10px;
+            padding: 10px;
+            width: 33%;
+            font-size: 18px;
+            color: #ffffff;
+
+        }
+
+        .flex-container > div > img {
+            object-fit:fill;
+        }
+
+        .flex-container > .list-container {
+            width: 95%;
+            height: 95%;
+        }
+
+        li {
+            margin: 20px;
+        }
+    </style>
     <title>My Favorite Recipes</title>
 </head>
 <body>
-    
+    <h1>Good Old Fashioned Pancakes</h1> 
+    <div class="flex-container">
+        <div class="flex-container" style="flex-direction: column; align-items: center;">
+            <div style="width:95%;">
+                <h2>Ingredients</h2>
+            </div>
+            <div class="list-container">
+                <ul>
+                    <li>3.5 teaspoons baking powder</li>
+                    <li>1 teaspoon salt</li>
+                    <li>1 tablespoon white sugar</li>
+                    <li>1.25 cups milk</li>
+                    <li>1 egg</li>
+                    <li>3 tablespoons melted butter</li>
+                </ul>
+            </div>
+        </div>
+        <div style="display: flex;padding: 0;margin:10px;">
+            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2020%2F05%2F07%2FGood-Old-Fashioned-Pancakes-2000.jpg&q=85" alt="Pancakes">
+        </div>
+        <div class="flex-container" style="flex-direction: column; align-items: center;">
+            <div style="width: 95%;">
+                <h2>Directions</h2>
+            </div>
+            <div class="list-container">
+                <ol>
+                    <li>Sift together flour, baking powder, salt, and sugar in large bowl.</li>
+                    <li>Make a well in the center and pour in the milk, egg, and butter; mix until smooth.</li>
+                    <li>Using a lightly oiled pan over medium-high heat, pour the batter (1/4&nbspcup&nbspof&nbspbatter&nbspper&nbsppancake)</li>
+                    <li>Brown on both sides and serve</li>
+                </ol>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
