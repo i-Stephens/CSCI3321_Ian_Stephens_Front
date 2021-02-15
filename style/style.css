@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: darkslategray;
+}
+header {
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: rgb(52, 52, 52);
+}
+
+#logo {
+    width: 5%;
+    height: auto;
+    margin: 10px 0px 10px 20px;
+    border-radius: 25%;
+}
+
+header nav {
+    /* display: inline-flex; */
+    /* margin-left: 50%; */
+    /* align-self: center; */
+    margin: auto;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 32px;
+    color: #fff;
+}
+
+header nav a {
+    padding: 0 64px 0 0;
+    text-decoration: none;
+}
+
+header nav a:link {
+    color: #fff;
+}
+
+header nav a:visited {
+    color: #fff;
+}
+
+header nav a:hover {
+    color:rgb(45, 208, 216);
+}
+
+main {
+    /* margin: auto; */
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+main img {
+    margin: 2% 10%;
+    padding: 50px 0px 30px 0px;
+    width: 20%;
+    height: auto;
+    border-radius: 40%;
+}
+
+main h1, h2 {
+    font-family: 'Staatliches', cursive;
+    color:rgb(45, 208, 216);
+    padding: 20px 0px;
+}
