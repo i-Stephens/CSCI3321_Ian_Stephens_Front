@@ -1,0 +1,112 @@
+#board {
+    display: grid;
+    width: 360px;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 500px;
+    max-height: 500px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    gap: 3px;
+    grid-template-areas: 
+        'topL topM topR'
+        'midL mid midR'
+        'botL botM botR';
+    text-align: center;
+}
+
+#gameEnded {
+    width: auto;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 24px;
+    visibility: hidden;
+}
+
+#newGame {
+    width: 100px;
+    margin: 20px auto;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid;
+    background-color: rgb(213, 213, 213);
+    visibility: visible;
+    cursor: default;
+}
+
+.space {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    padding: 10px;
+    font-size: 32px;
+    cursor: default;
+    background-color: rgb(44, 100, 167);
+    color: #fff;
+}
+
+#tL {
+    grid-area: topL;
+}
+
+#tM {
+    grid-area: topM;
+}
+
+#tR {
+    grid-area: topR;
+}
+
+#mL {
+    grid-area: midL;
+}
+
+#m {
+    grid-area: mid;
+}
+
+#mR {
+    grid-area: midR;
+}
+
+#bL {
+    grid-area: botL;
+}
+
+#bM {
+    grid-area: botM;
+}
+
+#bR {
+    grid-area: botR;
+}
+
+#rules {
+    width: 360px;
+    margin: 80px auto 0px auto;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(181, 181, 181, 0.306);
+}
+
+#rules h2 {
+    text-decoration: underline;
+}
+
+#rules ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#viewRules {
+    width: fit-content;
+    margin: 5px auto;
+    padding: 4px;
+    border-radius: 5%;
+    text-align: center;
+    color: #fff;
+    cursor:default;
+    background-color: rgb(44, 100, 167);
+}

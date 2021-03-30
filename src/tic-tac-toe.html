@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/tic-tac-toe.css">
+    <script src="../scripts/tic-tac-toe.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div id="board">
+        <div class="space" id="tL" onclick="turn(this)"></div>
+        <div class="space" id="tM" onclick="turn(this)"></div>
+        <div class="space" id="tR" onclick="turn(this)"></div>
+        <div class="space" id="mL" onclick="turn(this)"></div>
+        <div class="space" id="m" onclick="turn(this)"></div>
+        <div class="space" id="mR" onclick="turn(this)"></div>
+        <div class="space" id="bL" onclick="turn(this)"></div>
+        <div class="space" id="bM" onclick="turn(this)"></div>
+        <div class="space" id="bR" onclick="turn(this)"></div>
+    </div>
+
+    <div id="gameEnded">Player X starts first</div>
+    <div id="newGame" onclick="newGame()">Start Game</div>
+    <br>
+    <br>
+    <div id="rules">
+        <h2>Rules:</h2>
+        <ul>
+            <li>2 players - Player X vs Player O</li>
+            <li>Players take turns placing marks (X/O) in the empty spaces of a 3x3 grid</li>
+            <li>The 1st player to get 3 of their marks in a row (vertically,&nbsp;horizontally,&nbsp;or&nbsp;diagonally) wins</li>
+            <li>Once all spaces are filled and the win condition is not met, the result is a tie</li>
+        </ul>
+    </div>
+    <div id="viewRules" onclick="rules(this)">Hide Rules</div>
+</body>
+</html>
